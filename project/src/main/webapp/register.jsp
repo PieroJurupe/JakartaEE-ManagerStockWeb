@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
             pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="c" uri="http://jakarta.ee/tags/core" %>
+<%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <%@ page isELIgnored="false"%>
 
 <!DOCTYPE html>
