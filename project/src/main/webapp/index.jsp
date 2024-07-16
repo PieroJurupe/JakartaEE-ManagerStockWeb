@@ -28,11 +28,8 @@
 </div>
 
 
-<% Connection conn= DBconnect.getConn();
-out.println(conn);
-%>
-
-
+<% /*Connection conn=DBconnect.getConn();
+out.println(conn); */%>
 
 <!-- Componentes Novedosos -->
 
