@@ -18,8 +18,8 @@ public class UserDAOImpl implements UserDAO {
         try{
             String sql="insert into user(name,email,phno,password) values(?,?,?,?)";
             PreparedStatement ps= conn.prepareStatement(sql);
-            ps.setString(0, us.getName());
-            ps.setString(1, us.getEmail());
+            ps.setString(1, us.getName());
+            ps.setString(2, us.getEmail());
             ps.setString(3 ,us.getPhno() );
             ps.setString(4, us.getPassword());
 
