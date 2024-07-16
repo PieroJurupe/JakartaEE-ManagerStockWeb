@@ -1,6 +1,6 @@
 
     <div class="container-fluid" style="height: 40px;background-color: #009688"></div>
-    <div class="container-fluid p-3">
+    <div class="container-fluid p-3 bg-light">
     <div class="row">
     <div class="col-md-3 text success">
     <h3>E-WILSO<i class="fa-solid fa-laptop"></i></h3>
@@ -12,8 +12,9 @@
         </form>
     </div>
     <div class="col-md-3">
-        <a href="login.jsp" class="btn btn-success">Ingresar</a>
-        <a href="register.jsp" class="btn btn-primary text-white">Registrarse</a>
+        <a href="login.jsp" class="btn btn-success"><i class="fa-solid fa-right-to-bracket"></i> Ingresar</a>
+        <a href="register.jsp" class="btn btn-primary text-white"><i class="fa-solid fa-user-plus"></i> Registrarse</a>
+
     </div>
     </div>
     </div>
