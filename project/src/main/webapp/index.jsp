@@ -1,5 +1,7 @@
+<%@ page import="com.DB.DBconnect" %>
+<%@ page import="java.sql.Connection" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-            pageEncoding="ISO-8859-1"%>
+         pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +26,11 @@
 <div class="container-fluid back-img">
     <h2 class="text-center text-danger">COMPRA BARATO CON E-WILSON</h2>
 </div>
+
+
+<% Connection conn= DBconnect.getConn();
+out.println(conn);
+%>
 
 
 
