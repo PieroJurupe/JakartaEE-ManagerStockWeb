@@ -39,23 +39,21 @@ public class RegisterServlet extends HttpServlet {
 
                 if (f){
                     //System.out.println("Se registro al usuario");
-                    session.setAttribute(("successMSg"),"Registro exitoso");
+                    session.setAttribute(("succMsg"),"Registro exitoso");
                     resp.sendRedirect("register.jsp");
                 }
                 else {
                     //System.out.println("No se registro al usuario");
-                    session.setAttribute(("failedMSg"),"Error al registrar");
+                    session.setAttribute(("failedMsg"),"Error al registrar...");
                     resp.sendRedirect("register.jsp");
                 }
                 }
             else {
                     //System.out.println("Por favor acepta terminos y condiciones");
-                session.setAttribute(("failedMSg"),"Por favor aceptar terminos y condiciones");
+                session.setAttribute(("failedMsg"),"Por favor aceptar terminos y condiciones");
                 resp.sendRedirect("register.jsp");
 
                 }
-
-
 
         } catch (Exception e) {
             e.printStackTrace();
