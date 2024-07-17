@@ -16,7 +16,6 @@ import jakarta.servlet.http.HttpSession;
 public class RegisterServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
         try {
             String name = req.getParameter("fname");
             String email = req.getParameter("email");
