@@ -31,22 +31,22 @@
                     <%
                             int id=Integer.parseInt(request.getParameter("id"));
                         ProductDAOImpl dao=new ProductDAOImpl(DBconnect.getConn());
-                        ProductDtls b=dao.getProductById(id);                        )
+                        ProductDtls b=dao.getProductById(id);
                     %>
 
-                    <form action="../aditproducts" method="post">
+                    <form action="../editProducts" method="post">
                         <input type="hidden" name="id" value="<%=b.getProductId()%>">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nombre de producto*</label>
-                            <input name="pname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<%=b.getProductName()%>">
+                            <input name="pname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<%=b.getProductname()%>">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nombre de fabricante*</label>
-                            <input name="author" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<%=b.getAuthor()%>>
+                            <input name="author" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<%=b.getAuthor()%>">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Precio</label>
-                            <input name="price" type="number" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" value="<%=b.getPrice()%>>
+                            <input name="price" type="number" class="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" value="<%=b.getPrice()%>">
                         </div>
                         <div class="form-group">
                             <label for="inputState">Estado producto</label>

@@ -7,8 +7,6 @@
     </div>
     <div class="col-md-6">
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
     <div class="col-md-3">
@@ -27,23 +25,12 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-
-                <a class="nav-link" href="#"><i class="fa-solid fa-headset"></i> Componentes Novedosos</a>
-            </li>
-            <li class="nav-item active">
-
-                <a class="nav-link" href="#"><i class="fa-solid fa-desktop"></i> Componentes Nuevos</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link disabled" href="#"><i class="fa-solid fa-laptop-medical"></i> Componentes Viejos</a>
+                <a class="nav-link" href="index.jsp">Inicio<span class="sr-only">(current)</span></a>
             </li>
         </ul>
             <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-light my-2 my-sm-0" type="submit"><i class="fa-solid fa-gear"></i> Configuracion</button>
-                <button class="btn btn-light my-2 my-sm-0 ml-1" type="submit"><i class="fa-solid fa-phone"></i> Contacto</button>
+                <button class="btn btn-light my-2 my-sm-0" type="submit">EN</button>
+                <button class="btn btn-light my-2 my-sm-0 ml-1" type="submit">ES</button>
             </form>
     </div>
 </nav>

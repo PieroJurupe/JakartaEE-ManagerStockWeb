@@ -19,14 +19,23 @@
 </head>
 <body>
 <%@include file="navbar.jsp"%>
-<h3 class="text-center">Hello Admin</h3>
+
+
+
+<c:if test="${empty userobj }">
+    <c:redirect url="../login.jsp"/>
+</c:if>
+
+
+
+<h3 class="text-center">Administracion de Productos</h3>
 
 <c:if test="${not empty succMsg }">
     <h5 class="text-center text-success">${succMsg }</h5>
     <c:remove var="succMsg" scope="session" />
 </c:if>
 <c:if test="${not empty failedMsg }">
-    <p class="text-center text-danger">${failedMsg }</p>
+    <h5 class="text-center text-danger">${failedMsg }</h5>
     <c:remove var="failedMsg" scope="session" />
 </c:if>
 
@@ -52,46 +61,17 @@
     %>
     <tr>
         <th><%=b.getProductId()%></th>
-        <td><img src="../img/<%=b.getPhotoName()%>" style="width: 50px; height: 50px;"></td>
+        <td><img src="../img/<%=b.getPhotoName()%> "style="width: 50px; height: 50px;"></td>
         <td><%=b.getProductname()%></td>
         <td><%=b.getAuthor()%>></td>
         <td><%=b.getPrice()%>></td>
         <td><%=b.getProductCategory()%>></td>
         <td><%=b.getStatus()%></td>
-        <td><a href="edit_products.jsp?id=<%=b.getProductId()%>" class="btn btn-sm btn-primary">Editar</a>
-            <a href="../delete?id=<%=b.getProductId()%>" class="btn btn-sm btn-danger">Eliminar</a>
+        <td><a href="edit_products.jsp?id=<%=b.getProductId()%>" class="btn btn-sm btn-primary"><i class="fa-solid fa-pen-to-square"></i> Editar</a>
+            <a href="../delete?id=<%=b.getProductId()%>" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash"></i> Eliminar</a>
         </td>
     </tr>
-    <%
-        }
-        %>
-
-
-
-    <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>
-            <a href="#" class="btn btn-sm btn-primary">Editar</a>
-            <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
-        </td>
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td>
-            <a href="#" class="btn btn-sm btn-primary">Editar</a>
-            <a href="#" class="btn btn-sm btn-danger">Eliminar</a>
-        </td>
-    </tr>
+    <% } %>
     </tbody>
 </table>
 <div style="margin-top: 130px">

@@ -140,4 +140,96 @@ public ProductDAOImpl(Connection conn) {
         return f;
     }
 
+    public List<ProductDtls> getNewProduct() {
+        List <ProductDtls> list=new ArrayList<ProductDtls>();
+        ProductDtls b=null;
+        try {
+            String sql="select * from product_dtls where productCategory=? and status=? order by productId DESC";
+            PreparedStatement ps=conn.prepareStatement(sql);
+            ps.setString(1, "New");
+            ps.setString(2, "Active");
+            ResultSet rs=ps.executeQuery();
+            int i=1;
+            while (rs.next() && i<=4) {
+                b = new ProductDtls();
+                b.setProductId(rs.getInt(1));
+                b.setProductname(rs.getString(2));
+                b.setAuthor(rs.getString(3));
+                b.setPrice(rs.getString(4));
+                b.setProductCategory(rs.getString(5));
+                b.setStatus(rs.getString(6));
+                b.setPhotoName(rs.getString(7));
+                b.setEmail(rs.getString(8));
+                list.add(b);
+                i++;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return list;
     }
+
+    @Override
+    public List<ProductDtls> getRecentProduct() {
+        List <ProductDtls> list=new ArrayList<ProductDtls>();
+        ProductDtls b=null;
+        try {
+            String sql="select * from product_dtls where status=? order by productId DESC";
+            PreparedStatement ps=conn.prepareStatement(sql);
+            ps.setString(1, "Active");
+            ResultSet rs=ps.executeQuery();
+            int i=1;
+            while (rs.next() && i<=4) {
+                b = new ProductDtls();
+                b.setProductId(rs.getInt(1));
+                b.setProductname(rs.getString(2));
+                b.setAuthor(rs.getString(3));
+                b.setPrice(rs.getString(4));
+                b.setProductCategory(rs.getString(5));
+                b.setStatus(rs.getString(6));
+                b.setPhotoName(rs.getString(7));
+                b.setEmail(rs.getString(8));
+                list.add(b);
+                i++;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return list;
+    }
+
+    @Override
+    public List<ProductDtls> getOldProduct() {
+
+        List <ProductDtls> list=new ArrayList<ProductDtls>();
+        ProductDtls b=null;
+        try {
+            String sql="select * from product_dtls where productCategory=? and status=? order by productId DESC";
+            PreparedStatement ps=conn.prepareStatement(sql);
+            ps.setString(1, "Old");
+            ps.setString(2, "Active");
+            ResultSet rs=ps.executeQuery();
+            int i=1;
+            while (rs.next() && i<=4) {
+                b = new ProductDtls();
+                b.setProductId(rs.getInt(1));
+                b.setProductname(rs.getString(2));
+                b.setAuthor(rs.getString(3));
+                b.setPrice(rs.getString(4));
+                b.setProductCategory(rs.getString(5));
+                b.setStatus(rs.getString(6));
+                b.setPhotoName(rs.getString(7));
+                b.setEmail(rs.getString(8));
+                list.add(b);
+                i++;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return list;
+
+    }
+}
