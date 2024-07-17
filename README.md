@@ -13,7 +13,7 @@ This software project was built using a layered architecture.
 * Change password to confirm encrypt
 
 # ▶ Demo
-![Demo encrypt](https://github.com/user-attachments/assets/a34b5ea9-0192-410f-b5bb-0c6696e8f60d)
+![image](https://github.com/user-attachments/assets/e21305d3-5de2-4da6-a486-d91b404d7186)
 
 # ⚙ Technologies used
 * Maven
