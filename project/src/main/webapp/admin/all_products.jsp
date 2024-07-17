@@ -33,6 +33,7 @@
 <table class="table table-striped">
     <thead class="bg-primary text-white">
     <tr>
+        <th scope="col">ID</th>}
         <th scope="col">Imagen</th>
         <th scope="col">Producto</th>
         <th scope="col">Fabricante</th>
@@ -46,7 +47,7 @@
 
     <%
         ProductDAOImpl dao=new ProductDAOImpl(DBconnect.getConn());
-        List <ProductDtls> list=dao.getAllProducts();
+        List <ProductDtls> list=dao.getAllProduct();
         for (ProductDtls b : list) {
     %>
     <tr>

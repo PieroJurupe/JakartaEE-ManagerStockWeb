@@ -25,15 +25,16 @@ public class ProductAdd extends HttpServlet {
             Part part=request.getPart("pimg");
             String fileName = part.getSubmittedFileName();
 
-            ProductDtls p=new ProductDtls(productName,author,price,categories,status,fileName,"admin");
+            ProductDtls b=new ProductDtls(productName,author,price,categories,status,fileName,"admin");
             ProductDAOImpl dao=new ProductDAOImpl(DBconnect.getConn());
 
 
-            boolean f = dao.addProduct(p);
+
+            boolean f = dao.addProduct(b);
             HttpSession session=request.getSession();
             if(f) {
 
-            String path=getServletContext().getRealPath("")+"componentesNuevos";
+            String path=getServletContext().getRealPath("")+"img";
 
             File file = new File(path);
 

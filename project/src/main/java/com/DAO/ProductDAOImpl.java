@@ -20,7 +20,7 @@ public ProductDAOImpl(Connection conn) {
     boolean f = false;
     try {
         String sql="insert into product_dtls(productname,author,price,productCategory,status,photo,email) values(?,?,?,?,?,?,?)";
-        PreparedStatement ps=this.conn.prepareStatement(sql);
+        PreparedStatement ps= conn.prepareStatement(sql);
         ps.setString(1, b.getProductname());
         ps.setString(2, b.getAuthor());
         ps.setString(3, b.getPrice());

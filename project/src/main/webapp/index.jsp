@@ -24,7 +24,7 @@
 <body style="background-color: #F9F9F9;">
 <%@ include file="all_component/navbar.jsp"%>
 <div class="container-fluid back-img">
-    <h2 class="text-center text-danger">COMPRA BARATO CON E-WILSON</h2>
+    <h2 class="text-center text-danger"></h2>
 </div>
 
 
