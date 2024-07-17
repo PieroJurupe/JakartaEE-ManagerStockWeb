@@ -1,4 +1,4 @@
-!![banner](https://github.com/user-attachments/assets/080134fb-a676-4600-9cf5-f18c8712c361) 
+![banner](https://github.com/user-attachments/assets/080134fb-a676-4600-9cf5-f18c8712c361) 
 #  ![wilson (1)](https://github.com/user-attachments/assets/9edcd272-f8f1-4c90-a7d5-95b4572040dd) ManagerStockWeb
 > Web application created with JavaEE and  to demonstrate the proper use and importance of encryption
 > Simple but effective interface to test the encryption and make changes as desired to also decrypt the data via key matrix
