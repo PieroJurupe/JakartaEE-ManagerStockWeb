@@ -7,9 +7,7 @@
          pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-<%@ page session="true" %>
-<fmt:setLocale value="${sessionScope.lang}" scope="session"/>
-<fmt:setBundle basename="utils.message" scope="session"/>
+
 
 <!DOCTYPE html>
 <html>
@@ -45,6 +43,7 @@
 </div>
 
 
+
 <% /*Connection conn=DBconnect.getConn();
 out.println(conn); */%>
 
@@ -54,7 +53,7 @@ out.println(conn); */%>
 <!-- Componentes Nuevos -->
 
 <div class="container">
-    <h3 class="text-center"><fmt:message key="new.components"/></h3>
+    <h3 class="text-center">PRODUCTOS NUEVOS</h3>
     <div class="row">
         <%
             ProductDAOImpl dao=new ProductDAOImpl(DBconnect.getConn());

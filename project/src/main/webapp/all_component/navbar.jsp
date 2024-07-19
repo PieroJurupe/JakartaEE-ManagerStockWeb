@@ -1,4 +1,7 @@
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ page session="true" %>
+<fmt:setLocale value="${sessionScope.lang}" scope="session"/>
+<fmt:setBundle basename="utils.message" scope="session"/>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
     <div class="container-fluid" style="height: 40px;background-color: #009688"></div>
@@ -30,11 +33,5 @@
                 <a class="nav-link" href="index.jsp">Inicio<span class="sr-only">(current)</span></a>
             </li>
         </ul>
-        <form action="ChangeLanguageServlet" method="get">
-            <select name="lang" onchange="this.form.submit()">
-                <option value="en">ENGLISH</option>
-                <option value="es">ESPAÑOL</option>
-            </select>
-        </form>
     </div>
 </nav>
