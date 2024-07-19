@@ -8,8 +8,8 @@
   Time: 7:09 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="jakarta.tags.core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%><%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <%@ page isELIgnored="false"%>
 <html>
 <head>
@@ -42,7 +42,7 @@
 <table class="table table-striped">
     <thead class="bg-primary text-white">
     <tr>
-        <th scope="col">ID</th>}
+        <th scope="col">ID</th>
         <th scope="col">Imagen</th>
         <th scope="col">Producto</th>
         <th scope="col">Fabricante</th>
@@ -63,9 +63,9 @@
         <th><%=b.getProductId()%></th>
         <td><img src="../img/<%=b.getPhotoName()%> "style="width: 50px; height: 50px;"></td>
         <td><%=b.getProductname()%></td>
-        <td><%=b.getAuthor()%>></td>
-        <td><%=b.getPrice()%>></td>
-        <td><%=b.getProductCategory()%>></td>
+        <td><%=b.getAuthor()%></td>
+        <td><%=b.getPrice()%></td>
+        <td><%=b.getProductCategory()%></td>
         <td><%=b.getStatus()%></td>
         <td><a href="edit_products.jsp?id=<%=b.getProductId()%>" class="btn btn-sm btn-primary"><i class="fa-solid fa-pen-to-square"></i> Editar</a>
             <a href="../delete?id=<%=b.getProductId()%>" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash"></i> Eliminar</a>

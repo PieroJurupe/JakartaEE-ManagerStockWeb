@@ -34,14 +34,14 @@ else {
     User us=dao.login(email,password);
     if (us!=null){
         session.setAttribute("userobj",us);
-        resp.sendRedirect("home.jsp");
+        resp.sendRedirect("admin/home.jsp");
     }
     else {
         session.setAttribute("failedMsg","Credenciales incorrectas");
         resp.sendRedirect("login.jsp");
     }
 
-    resp.sendRedirect("home.jsp");
+    resp.sendRedirect("admin/home.jsp");
 }
 }catch (Exception e){
     e.printStackTrace();

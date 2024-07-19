@@ -7,8 +7,8 @@
   Time: 1:37 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="jakarta.tags.core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%><%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <%@ page isELIgnored="false"%>
 <html>
 
@@ -37,11 +37,11 @@
                     <form action="../editProducts" method="post">
                         <input type="hidden" name="id" value="<%=b.getProductId()%>">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Nombre de producto*</label>
-                            <input name="pname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<%=b.getProductname()%>">
+                            <label for="exampleInputEmail1">Nombre de producto</label>
+                            <input name="productName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<%=b.getProductname()%>">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Nombre de fabricante*</label>
+                            <label for="exampleInputEmail1">Nombre de fabricante</label>
                             <input name="author" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="<%=b.getAuthor()%>">
                         </div>
                         <div class="form-group">
@@ -53,13 +53,13 @@
                             <select id="inputState" name="status" class="form-control">
                                 <%if("Active".equals(b.getStatus())){
                                 %>
-                                    <option value="Active">Nuevo</option>
-                                    <option value="Inactive">Usado</option>
+                                <option value="Nuevo">Nuevo</option>
+                                <option value="Usado">Usado</option>
                                    <%
                                 } else{
                                     %>
-                                <option value="Inactive">Usado</option>
-                                <option value="Active">Nuevo</option>
+                                <option value="Nuevo">Nuevo</option>
+                                <option value="Usado">Usado</option>
                                 <%
                                   }
                                 %>

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-            pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+            pageEncoding="UTF-8"%>
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <%@ page isELIgnored="false"%>
 
@@ -8,6 +8,7 @@
 <head>
     <meta charset="ISO-8859-1">
     <title>EWilson Registro</title>
+
     <%@include file="all_component/allCss.jsp"%>
     </head>
     <body style="background-color: #f0f1f2;">
@@ -20,9 +21,11 @@
     <h4 class="text-center">Pagina de Registro</h4>
         <c:if test="${not empty succMsg}">
             <p class="text-center text-success">${succMsg}</p>
+            <% session.removeAttribute("succMsg"); %>
         </c:if>
         <c:if test="${not empty failedMsg}">
         <p class="text-center text-danger">${failedMsg}</p>
+            <% session.removeAttribute("failedMsg"); %>
         </c:if>
 <form action="register" method="post">
   <div class="form-group">

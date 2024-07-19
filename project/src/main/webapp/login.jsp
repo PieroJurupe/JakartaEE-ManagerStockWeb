@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-            pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+            pageEncoding="UTF-8"%>
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <%@ page isELIgnored="false"%>
 <!DOCTYPE html>
@@ -36,7 +36,7 @@
 
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1">Contraseña</label>
+        <label for="exampleInputPassword1">ContraseÃ±a</label>
         <input type="password" class="form-control" id="exampleInputPassword1" required="required" name="password">
       </div>
       <div class="text-center">

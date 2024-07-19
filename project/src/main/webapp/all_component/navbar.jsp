@@ -1,4 +1,6 @@
 
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
     <div class="container-fluid" style="height: 40px;background-color: #009688"></div>
     <div class="container-fluid p-3 bg-light">
     <div class="row">
@@ -28,9 +30,11 @@
                 <a class="nav-link" href="index.jsp">Inicio<span class="sr-only">(current)</span></a>
             </li>
         </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-light my-2 my-sm-0" type="submit">EN</button>
-                <button class="btn btn-light my-2 my-sm-0 ml-1" type="submit">ES</button>
-            </form>
+        <form action="ChangeLanguageServlet" method="get">
+            <select name="lang" onchange="this.form.submit()">
+                <option value="en">ENGLISH</option>
+                <option value="es">ESPAÑOL</option>
+            </select>
+        </form>
     </div>
 </nav>

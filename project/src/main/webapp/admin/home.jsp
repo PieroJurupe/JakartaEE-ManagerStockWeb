@@ -7,8 +7,8 @@
 --%>
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <%@ page isELIgnored="false"%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%><html>
 <head>
     <title>Admin:Home</title>
     <%@include file="allCss.jsp"%>
