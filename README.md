@@ -33,7 +33,7 @@ Este proyecto de software se construyó utilizando una arquitectura MVC.
 * JakartaEE
 
 # 🛠 Iniciar el proyecto
-*Utilice Java IDE como IntelliJ o NetBeans para ejecutar el programa; si lo desea, puede agregar una nueva base de datos MySql llamada ewilson con dos tablas.
+* Utilice Java IDE como IntelliJ o NetBeans para ejecutar el programa; si lo desea, puede agregar una nueva base de datos MySql llamada ewilson con dos tablas.
 
 # 👷‍♀️ Contribuidores
 * [Piero Jurupe](https://github.com/PieroJurupe)
