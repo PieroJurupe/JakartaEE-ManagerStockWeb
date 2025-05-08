@@ -10,7 +10,7 @@ Este proyecto de software se construyó utilizando una arquitectura MVC.
 
 ![image](https://github.com/user-attachments/assets/4f0e798d-1182-448b-8f79-01e85df774bb)
 
-# 📄 Esquema de base de datos
+# 📄 Base de datos
 ![DBWILSON](https://github.com/user-attachments/assets/e1ee1ee5-a9ab-4a20-ae89-3b1ca52dbf52)
 
 # 📦 Características
