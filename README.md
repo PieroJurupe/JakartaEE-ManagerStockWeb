@@ -14,8 +14,7 @@ Este proyecto de software se construyó utilizando una arquitectura MVC.
 ![DBWILSON](https://github.com/user-attachments/assets/e1ee1ee5-a9ab-4a20-ae89-3b1ca52dbf52)
 
 # 📦 Características
-
-*Inicio
+* Inicio
 * Vista de producto
 * Crear usuario
 * Iniciar sesión
