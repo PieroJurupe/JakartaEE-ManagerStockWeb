@@ -3,7 +3,7 @@
 > Aplicación web creada con Java y MySql para la gestión de stock.
 > Interfaz para ver todos los productos, agregarlos o editarlos.
 > 
-> Idioma: Spanish
+> Idioma: Español
 
 # 🏛 Arquitectura
 Este proyecto de software se construyó utilizando una arquitectura MVC.
